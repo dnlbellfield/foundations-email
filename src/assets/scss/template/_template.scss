@@ -1,18 +1,35 @@
+html, body,
+.body {
+  background: #e4e5ea;
+  background-color: #e4e5ea;
+}
+
 .header {
-  background: rgb(28, 80, 103);
-  background-color: rgb(28, 80, 103);
+  background: #d65600;
+  background-color: #d65600;
 
   .columns {
     padding-bottom: 0;
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 20px;
+    .logo-white {
+      width: 128px;
+    }
+    .logo-user {
+      width: 50px;
+    }
 
     h1 {
       color: white;
       padding-bottom: 10px;
     }
   }
+}
+
+.sub-header {
+  background: #e86c1e;
+  background-color: #e86c1e;
 }
 
 .nav {
