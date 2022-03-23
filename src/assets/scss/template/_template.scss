@@ -109,41 +109,50 @@ html, body,
     }
   }
   .button {
-    a {
+
       color: white;
       font-weight: 600 !important;
-      &:hover {
-        color: $primary-color;
-      }
-    }
-    display: inline-block;
+      
+
+    display: block;
+    margin: 0 auto;
     width: 150px !important;
     text-align: center; 
     padding-top: 10px;
     padding-bottom: 10px;
     border: 1px solid #fff;
     border-radius: 5px;
+    &:hover {
+      color: $primary-color;
+    }
   }
   
 }
 
 .content_area {
+  
   background: #f4f1f7;
   background-color: #f4f1f7;
   & > tbody > tr > th {
     padding-top: 16px;
   }
+
   .offer {
     background: #ffffff;
     background-color: #ffffff;
-
+    
+    
     .columns {
-      color: black;
+      // color: black;
       th {
-        padding-top: 20px !important;
-        padding-bottom: 20px !important;
-        padding-left: 20px !important;
-        padding-right: 20px !important;
+        padding-top: 20px;
+        padding-bottom: 20px ;
+        padding-left: 20px ;
+        padding-right: 20px ;
+      }
+      & > table {
+        table-layout: fixed;
+        max-width: 560px;
       }
     }
     img {
@@ -189,23 +198,39 @@ html, body,
       }
     }
     .button {
-      a {
-        color: white;
-        font-weight: 600 !important;
-        &:hover {
-          color: $primary-color;
-        }
-      }
-      display: inline-block;
+      color: white;
+      // margin-right: 30px !important;
+      display: block;
+      margin: 0 auto;
       background-color: #13191f !important;
       background:  #13191f !important;;
       width: 150px !important;
       text-align: center; 
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 7px  !important;
+      padding-bottom: 7px !important;
       border: 1px solid black;
       border-radius: 3px;
-    }
+      &:hover {
+        color: $primary-color;
+      }
+    } 
+
+  }
+
+}
+
+.last_offer {
+  .group_icons {
+    width: 190px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0 !important;
+  }
+  .tiny_info {
+    font-size: 100px;;
+  }
+  h4 {
+    text-align: center;
+    font-size: 16px;
   }
 }
-  
