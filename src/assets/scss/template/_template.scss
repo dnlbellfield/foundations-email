@@ -2,6 +2,7 @@ html, body,
 .body {
   background: #e4e5ea;
   background-color: #e4e5ea;
+  padding-bottom: 300px;
 }
 
 .header {
@@ -38,7 +39,7 @@ html, body,
       font-weight: 700;
       .thumb {
         width: 20px;
-        margin-right: 10px;
+        // margin-right: 10px;
         display: inline-block;
         vertical-align: bottom;
         
@@ -134,7 +135,7 @@ html, body,
   background: #f4f1f7;
   background-color: #f4f1f7;
   & > tbody > tr > th {
-    padding-top: 16px;
+    padding-top: 0;
   }
 
   .offer {
@@ -219,6 +220,7 @@ html, body,
 
 }
 
+
 .last_offer {
   .group_icons {
     width: 190px;
@@ -235,8 +237,80 @@ html, body,
   }
   .tiny_info  {
     text-align: center !important;
-    font-size: 14px !important;
-    font-weight: 300 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
     padding-bottom: 10px;
+  }
+}
+
+.footer-top {
+  background: #222d37;
+  background-color: #222d37;
+  color: white;
+  & > tbody > tr>th {
+    
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  
+  th {
+    padding-bottom: 0;
+    color: white;
+    font-size: 12px;
+  }
+  .circle-logo {
+    display: block;
+    margin: 0 auto;
+  }
+  .call-to-action {
+    display: block;
+    padding-left: 10px !important;
+  }
+  .info {
+    display: block;
+
+    padding-left: 10px !important;
+    color: white;
+    font-size: 10px;
+
+  }
+  .appstore {
+    height: 35px;
+
+    padding-top: 10px;
+  }
+  .playstore {
+    padding-top: 10px;
+    height: 35px;
+    width: 105px;
+  }
+
+ 
+}
+
+.footer-social {
+  background: #14181c;
+  background-color: #14181c;
+  & > tbody > tr > th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  th {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .logo-section {
+    img {
+      width: 128px;
+    }
+  }
+  .social-icons {
+    img {
+      width: 32px;
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
