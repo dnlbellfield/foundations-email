@@ -5,8 +5,8 @@ html, body,
 }
 
 .header {
-  background: #e86c1e;
-  background-color:  #e86c1e;  
+  background: $primary-color;
+  background-color:  $primary-color;
 
   .columns {
     padding-bottom: 20px;
@@ -58,3 +58,154 @@ html, body,
   }
 
 }
+
+.deal_of_day {
+  background:#13191f;
+  background-color: #13191f;
+
+  .columns {
+    th {
+      padding-top: 30px !important;
+      padding-bottom: 20px !important;
+    }
+  }
+  img {
+    padding-bottom: 20px;
+  }
+
+
+  h2 {
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  p {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+  span {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    display: block;
+    &.save_amount {
+      font-size: 14px;
+    }
+    &.tiny_info {
+      font-size: 10px !important;
+      font-weight: 300;
+      padding-bottom: 10px !important;
+    }
+    &.price {
+      font-size: 20px;
+      font-weight: 600 !important;
+      padding-bottom: 10px !important;
+    }
+  }
+  .button {
+    a {
+      color: white;
+      font-weight: 600 !important;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    display: inline-block;
+    width: 150px !important;
+    text-align: center; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+  
+}
+
+.content_area {
+  background: #f4f1f7;
+  background-color: #f4f1f7;
+  & > tbody > tr > th {
+    padding-top: 16px;
+  }
+  .offer {
+    background: #ffffff;
+    background-color: #ffffff;
+
+    .columns {
+      color: black;
+      th {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+    }
+    img {
+      padding-bottom: 20px;
+    }
+
+
+    h2 {
+      color: #334755;
+      font-weight: 900;
+      font-size: 30px;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    p {
+      text-align: center;
+      color: #334755;
+      font-weight: 600;
+      font-size: 16px;
+      padding-bottom: 20px;
+    }
+    span {
+      text-align: center;
+      color: black;
+      font-weight: 600;
+      font-size: 16px;
+      display: block;
+      &.save_amount {
+        font-size: 14px;
+        color: #1a88f3;
+      }
+      &.tiny_info {
+        color: #334755;
+        font-size: 10px !important;
+        font-weight: 600 !important;
+        padding-bottom: 10px !important;
+      }
+      &.price {
+        font-size: 20px;
+        font-weight: 600 !important;
+        padding-bottom: 10px !important;
+        color: #334755;
+      }
+    }
+    .button {
+      a {
+        color: white;
+        font-weight: 600 !important;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+      display: inline-block;
+      background-color: #13191f !important;
+      background:  #13191f !important;;
+      width: 150px !important;
+      text-align: center; 
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 1px solid black;
+      border-radius: 3px;
+    }
+  }
+}
+  
