@@ -8,12 +8,12 @@ subject: Great Deals Today
   <row class="deal_of_day">
     <columns>
       <h2>Deal of the Day</h2>
-      <img src="{{root}}/assets/img/ireland.png" alt="ireland">
-      <p>Ireland: 8 days with air, hotel, and car rental. Use promo code CFDL110 to save. Price reflects NYC departure, other cities available.</p>
-      <span class="save_amount"> Save $110 with code</span>
-      <span class="tiny_info">Gate 1 Travel</span>
-      <span class="price">$649+</span>
-     <a  class="button" href="#">See Deal</a>
+      <img src="{{kayakEmail.dealOfTheDay.image}}" alt="ireland">
+      <p>{{kayakEmail.dealOfTheDay.location}}: {{kayakEmail.dealOfTheDay.description}}</p>
+      <span class="save_amount"> {{kayakEmail.dealOfTheDay.saveAmount}}</span>
+      <span class="tiny_info">{{kayakEmail.dealOfTheDay.tinyInfo}}</span>
+      <span class="price">${{kayakEmail.dealOfTheDay.price}}+</span>
+     <a  class="button" href="{{kayakEmail.dealOfTheDay.link}}">See Deal</a>
     </columns>
   </row>
 </container>
@@ -21,16 +21,18 @@ subject: Great Deals Today
 <container >
     <row class="content_area">
     <columns>
+      {{#each kayakEmail.offers}}
       <row class="offer first-offer" style="margin-top:16px;">
         <columns>
-          <img src="{{root}}/assets/img/cancun.png" alt="ireland">
-          <p>Cancun: 4 nights with air and Melody Maker Cancun stay. Price reflects MIA departure, other cities available.</p>
-          <span class="save_amount"> Save up to 65%</span>
-          <span class="tiny_info">CheapCarribean.com</span>
-          <span class="price">$689+</span>
-           <a href="#" class="button">See Deal</a> 
+          <img src="{{this.image}}" alt="ireland">
+          <p>{{this.location}}: {{this.description}}</p>
+          <span class="save_amount">{{this.saveAmount}}</span>
+          <span class="tiny_info">{{this.tinyInfo}}</span>
+          <span class="price">${{this.price}}+</span>
+           <a href="{{this.link}}" class="button">See Deal</a> 
         </columns>
       </row>
+      {{/each}}
     </columns>
   </row>
 </container>
@@ -43,7 +45,7 @@ subject: Great Deals Today
         <row>
       
           <columns>
-            <img class="group_icons" src="{{ root}}/assets/img/airplane_dark.png" alt="">
+            <img class="group_icons" src="https://i.imgur.com/gfaHeuE.png" alt="travel icons">
           </columns>
         </row>
        
